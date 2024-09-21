@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MaKeD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+    .contenedor{
+        height: 20%;
+        margin: 0% 11%;}
+
+        html, body{
+            height: 100%;
+          }
+          .contenedorR{
+            height: 20%;
+            margin: 0% 0%;}
+    
+            html, body{
+                height: 100%;
+              }
+
+              .nav-link {
+                position: relative;
+                display: inline-block;
+                text-decoration: none;
+                color: black;
+                transition: transform 0.3s ease, background-color 0.3s ease;
+                border-radius: 15px; /* Mantener el border-radius */
+                overflow: hidden; /* Asegura que el border-radius se mantenga */
+                padding: 10px 20px; /* Ajustar el padding para el efecto de tamaño */
+                height: 40px;
+            }
+    
+            .nav-link::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #5df1f67d;; /* Color de iluminación */
+                transform: scale(0);
+                transition: transform 0.3s ease;
+                border-radius: 10px; /* Asegura el border-radius en el pseudo-elemento */
+                z-index: -1; /* Pone el pseudo-elemento detrás del texto */
+            }
+    
+            .nav-link:hover::before {
+                transform: scale(1);
+            }
+    
+            .nav-link:hover {
+                transform: scale(1.1); /* Aumento del tamaño */
+            }
+    
+            .btn {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                border-radius: 10px; /* Opcional: agregar border-radius a los botones */
+            }
+    
+            .btn:hover {
+                transform: scale(1.1); /* Aumento del tamaño */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para iluminación */
+            }
+    </style>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <br>
+    <div class="container text-center">
+        <div class="row">
+          <div class="col" align="left">
+            <img src="makedlogo.png" width="90" height="30">
+          </div>
+          <div class="col">
+            <a class="nav-link py-2 px-0 px-lg-2" href="index.html" color="black" onclick="href='index.html'"><p>INICIO</p></a>
+          </div>
+          <div class="col">
+            <a class="nav-link py-2 px-0 px-lg-2" href="quienesS.html" onclick="href='quienesSomos.php'"><p>¿QUIÉNES SOMOS?</p></a>
+          </div>
+          <div class="col">
+            <a class="nav-link py-2 px-0 px-lg-2" href="empresas.html" onclick="href='empresas.html'"><p>EMPRESA</p></a>
+          </div>
+          <div class="col">
+            <a class="nav-link py-2 px-0 px-lg-2" href="programador.html" onclick="href='programador.html'"><p>PROGRAMADOR</p></a>
+          </div>
+          <div class="col" align = "right">
+            <button type="button" class="btn btn-light" onclick="window.location.href='iniciarSesion.php'">Iniciar sesion</button>
+          </div>
+          <div class="col" align="left">
+            <button type="button" class="btn btn-info" onclick="window.location.href='registro.php'">Registro</button>
+          </div>
+        </div>
+      </div>
+
+      <div class = "contenedor">
+        <br> <br> <br>
+        <h1 class="display-4">Te damos la bienvenida a</h1>
+        <br>
+        <img src="makedlogo.png" width="460" height="150">
+        <br><br><br>
+        <h3 class="display-6">Donde las empresas y los talentos<br>freelance se unen para alcanzar<br> la sinergia perfecta.</h3>
+        <br><br><br>
+        <button type="button" class="btn btn-info btn-lg" onclick="window.location.href='iniciarSesion.php'">Empezar ahora</button>
+     </div>
+
+      <div class = "contenedorR">
+      <img style = "float: right;" src="makedfondo.png"  alt="..." >
+      </div>
+  </body>
+</html>
+
